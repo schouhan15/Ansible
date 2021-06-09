@@ -24,8 +24,5 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setu-node@v1
-      - run: npm install -g bats
-      - run: bats -v
-
+      - run: echo "::set-output name=test::hello"
    
